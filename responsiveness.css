@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+nav img {
+    height: 9.5vh;
+    margin: 4px;
+}
+
+nav .links a {
+    margin: 20px;
+    text-decoration: none;
+    font-size: x-large;
+    color: blue;
+}
+
+nav .links .newpost {
+    background-color: #ff5a5f;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+header {
+    width: 100%;
+    height: 80vh;
+    background: url(./images/headerbg.jpg);
+    background-size: cover;
+    margin-top: 5px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.header .main-title1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(37, 37, 78);
+}
+.main-title1+p {
+    font-size: x-large;
+    margin-top: 10px;
+}
+
+.header .post {
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 15px;
+    color: rgb(38, 37, 37);
+    border: 1px solid black;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+.sec {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+main {
+    width: 70%;
+    display: flex;
+    margin: 30px 30px 30px 5px;
+    flex-direction: column;
+}
+aside {
+    margin-top: 30px;
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+}
+
+.im {
+    width: 100%;
+}
+
+.main-content {
+    margin: 10px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.post-updates {
+    margin: 10px 10px 30px 0px;
+    text-align: center;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.main-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+.updates-title {
+    text-align: center;
+    font-size: 30px;
+}
+p {
+    margin: 10px;
+}
+p + a {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+span {
+    margin-right: 10px;
+}
+h3 {
+    margin-left: 10px;
+}
+h1 {
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+h1 + h3 {
+    text-align: center;
+}
+#author {
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 60%;
+}
+#about-me {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #003049;
+    color: #fff;
+    align-items: center;
+}
+
+ footer .novo .prime {
+    font-size: 80px;
+    color: #ffbe0b;
+    font-weight: bold;
+}
+.novo .simple {
+    font-size: 40px;
+}
+.novo {
+    margin-top: 10px;
+}
+.novo #blogs {
+    font-size: x-large;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+.contact .con-logo {
+    padding: 10px;
+    color: #fff;
+}
+.con-logo i {
+    padding-right: 10px;
+}
+.contact .email {
+    padding: 10px;
+    text-decoration: none;
+}
+.email i {
+    padding-right: 10px;
+}
+
+.icons {
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: x-large;
+}
+.icons a {
+    padding: 10px;
+    color: #ffbe0b;
+}
+
+@media (max-width: 750px) {
+    nav {
+        width: 100%;
+        height: 35vh;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        width: 100%;
+        height: 65vh;
+        background: url(./images/headerbg.jpg);
+        background-size: cover;
+        margin-top: 5px;
+    }
+    nav .links a {
+        margin: 5px;
+        text-decoration: none;
+        font-size: x-large;
+        color: blue;
+    }
+    nav img {
+        height: 7.5vh;
+        margin-top: 2px;
+    }
+    .header .main-title1 {
+        font-size: 40px;
+        font-weight: bold;
+        color: rgb(37, 37, 78);
+    }
+    .main-title1+p {
+        font-size: x-large;
+        margin-top: 10px;
+    }
+    .sec {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    main {
+        width: 95%;
+        display: flex;
+        margin: 30px 20px 30px 15px;
+        flex-direction: column;
+    }
+    aside {
+        margin-top: 30px;
+        margin-left: 20px;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .novo .prime {
+        font-size: 50px;
+        color: #ffbe0b;
+        font-weight: bold;
+    }
+    .novo .simple {
+        font-size: 30px;
+    }
+}
+
